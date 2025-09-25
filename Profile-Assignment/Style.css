@@ -1,0 +1,94 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    display: grid;
+    gap: 5px;
+    max-width: 900px;
+    margin: auto;
+}
+/* Top Box (Intro Session) */
+.intro {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+    background: #add8e6;
+    border: 2px solid #d63384;
+    border-radius: 20px;
+    padding: 30px;
+    align-items: center;
+    /* margin-bottom: 0px; */
+}
+/* Circle Placeholder */
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    background: #bbb;
+    border-radius: 50%;
+    border: 3px solid #d63384; 
+    overflow: hidden;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* keeps proportions inside the circle */
+  }
+  
+/* About Session */
+.about {
+    margin-left: 60px;
+}
+
+.about h1 {
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* Bottom Grid */
+.grid-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin: 0px;
+}
+
+.grid-boxes section {
+    background: #add8e6;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #d63384;
+    text-align: center;
+}
+
+.grid-boxes h2 {
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* Responsive Layout */
+@media (max-width: 700px) {
+        .intro {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .grid-boxes {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-pic {
+        margin-bottom: 15px;
+    }
+}
